@@ -19,6 +19,7 @@ $query->bindParam(':subject',$subject,PDO::PARAM_STR);
 $query->bindParam(':status',$status,PDO::PARAM_STR);
 $query->execute();
 $lastInsertId = $dbh->lastInsertId();
+    
 if($lastInsertId)
 {
 $msg="Combination added successfully";
