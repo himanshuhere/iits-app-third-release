@@ -11,6 +11,7 @@ if(isset($_POST['submit']))
 {
 $class=$_POST['class'];
 $subject=$_POST['subject']; 
+    
 $status=1;
 $sql="INSERT INTO  tblsubjectcombination(ClassId,SubjectId,status) VALUES(:class,:subject,:status)";
 $query = $dbh->prepare($sql);
