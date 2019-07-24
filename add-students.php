@@ -7,8 +7,6 @@ if(strlen($_SESSION['alogin'])=="")
     header("Location: index.php"); 
 }
 else{
-
-
 if(isset($_POST['submit']))
 {
 $studentname=$_POST['fullanme'];
