@@ -6,8 +6,7 @@ if(strlen($_SESSION['alogin'])=="")
     {   
     header("Location: index.php"); 
 }
-
-    else{
+else{
 
 
 if(isset($_POST['submit']))
